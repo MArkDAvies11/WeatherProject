@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherCast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>WeatherCast</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#current-weather-section">Current Weather</a></li>
+            <li><a href="#forecast-section">7-Day Forecast</a></li>
+            <li><a href="#favorite-cities-section">Favorite Cities</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="search-section">
+            <form id="city-search-form">
+                <input type="text" id="city-input" placeholder="Enter city name..." required>
+                <button type="submit" id="search-button">Search Weather</button>
+            </form>
+        </section>
+
+        <section id="current-weather-section" class="weather-card">
+            <h2>Current Weather in <span id="current-city-name"></span></h2>
+            <div id="weather-icon-container">
+                </div>
+            <p id="temperature"></p>
+            <p id="conditions"></p>
+            <div class="details">
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="wind-speed"></span></p>
+                <p>Pressure: <span id="pressure"></span></p>
+            </div>
+            <button id="add-favorite-button">Add to Favorites</button>
+        </section>
+
+        <section id="forecast-section">
+            <h2>7-Day Forecast</h2>
+            <div id="daily-forecast-container">
+                </div>
+        </section>
+
+        <section id="favorite-cities-section">
+            <h2>Your Favorite Cities</h2>
+            <ul id="favorite-cities-list">
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WeatherCast. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

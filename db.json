@@ -1,0 +1,60 @@
+{
+  "favoriteCities": [
+    {
+      "id": "1",
+      "name": "Mombasa",
+      "latitude": -4.0375,
+      "longitude": 39.6644,
+      "addedDate": "2025-06-26T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "London",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "addedDate": "2025-06-26T12:05:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Tokyo",
+      "latitude": 35.6895,
+      "longitude": 139.6917,
+      "addedDate": "2025-06-26T12:10:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Sydney",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "addedDate": "2025-06-26T12:15:00Z"
+    },
+    {
+      "id": "5",
+      "name": "New York",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "addedDate": "2025-06-26T12:20:00Z"
+    },
+    {
+      "id": "78d1",
+      "name": "Nairobi",
+      "latitude": -1.25,
+      "longitude": 36.875,
+      "addedDate": "2025-06-27T07:58:28.652Z"
+    },
+    {
+      "id": "0849",
+      "name": "Kisumu",
+      "latitude": -0.125,
+      "longitude": 34.75,
+      "addedDate": "2025-06-27T07:59:00.347Z"
+    },
+    {
+      "id": "60e9",
+      "name": "Dodoma",
+      "latitude": -6.125,
+      "longitude": 35.75,
+      "addedDate": "2025-06-27T08:56:57.386Z"
+    }
+  ]
+}
