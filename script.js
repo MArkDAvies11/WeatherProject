@@ -21,39 +21,7 @@ const themeToggle = document.getElementById('theme-toggle');
 let currentCityData = null;
 
 
-function getWeatherIcon(weatherCode) {
-    const weatherIcons = {
-        0: '<i class="fas fa-sun"></i> Clear sky',
-        1: '<i class="fas fa-cloud-sun"></i> Mainly clear',
-        2: '<i class="fas fa-cloud-sun"></i> Partly cloudy',
-        3: '<i class="fas fa-cloud"></i> Overcast',
-        45: '<i class="fas fa-smog"></i> Fog',
-        48: '<i class="fas fa-smog"></i> Depositing rime fog',
-        51: '<i class="fas fa-cloud-showers-heavy"></i> Drizzle',
-        53: '<i class="fas fa-cloud-showers-heavy"></i> Drizzle',
-        55: '<i class="fas fa-cloud-showers-heavy"></i> Drizzle',
-        56: '<i class="fas fa-cloud-meatball"></i> Freezing Drizzle',
-        57: '<i class="fas fa-cloud-meatball"></i> Freezing Drizzle',
-        61: '<i class="fas fa-cloud-showers-heavy"></i> Rain',
-        63: '<i class="fas fa-cloud-showers-heavy"></i> Rain',
-        65: '<i class="fas fa-cloud-showers-heavy"></i> Rain',
-        66: '<i class="fas fa-cloud-meatball"></i> Freezing Rain',
-        67: '<i class="fas fa-cloud-meatball"></i> Freezing Rain',
-        71: '<i class="fas fa-snowflake"></i> Snow fall',
-        73: '<i class="fas fa-snowflake"></i> Snow fall',
-        75: '<i class="fas fa-snowflake"></i> Snow fall',
-        77: '<i class="fas fa-snowflake"></i> Snow grains',
-        80: '<i class="fas fa-cloud-showers-heavy"></i> Rain showers',
-        81: '<i class="fas fa-cloud-showers-heavy"></i> Rain showers',
-        82: '<i class="fas fa-cloud-showers-heavy"></i> Rain showers',
-        85: '<i class="fas fa-snowflake"></i> Snow showers',
-        86: '<i class="fas fa-snowflake"></i> Snow showers',
-        95: '<i class="fas fa-bolt"></i> Thunderstorm',
-        96: '<i class="fas fa-bolt"></i> Thunderstorm with hail',
-        99: '<i class="fas fa-bolt"></i> Thunderstorm with hail'
-    };
-    return weatherIcons[weatherCode] || '<i class="fas fa-question-circle"></i> Unknown';
-}
+
 
 // Function to fetch weather data from Open-Meteo
 async function fetchWeatherData(latitude, longitude) {
