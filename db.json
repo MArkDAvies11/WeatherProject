@@ -1,20 +1,6 @@
 {
   "favoriteCities": [
     {
-      "id": "2",
-      "name": "London",
-      "latitude": 51.5074,
-      "longitude": -0.1278,
-      "addedDate": "2025-06-26T12:05:00Z"
-    },
-    {
-      "id": "3",
-      "name": "Tokyo",
-      "latitude": 35.6895,
-      "longitude": 139.6917,
-      "addedDate": "2025-06-26T12:10:00Z"
-    },
-    {
       "id": "4",
       "name": "Sydney",
       "latitude": -33.8688,
