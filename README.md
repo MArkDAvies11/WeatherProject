@@ -75,4 +75,5 @@ Open-Meteo API
 
 © 2025 [Mark Davies]]. All rights reserved.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+                       
