@@ -1,8 +1,4 @@
-# WeatherProject
 # WeatherCast
-
-![WeatherCast Screenshot](https://github.com/your-username/your-repo-name/blob/main/path/to/your/screenshot.png?raw=true)
-*Replace this placeholder image with an actual screenshot of your deployed app.*
 
 ## Project Name
 
@@ -44,11 +40,7 @@ As a user, I can:
 To get a local copy up and running, follow these simple steps:
 
 1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
     cd your-repo-name
-    ```
-    *(Replace `your-username/your-repo-name` with your actual GitHub repository details)*
 
 2.  **Install `json-server` (if you haven't already):**
     `json-server` is used to simulate a backend API for persisting favorite cities.
@@ -70,21 +62,17 @@ To get a local copy up and running, follow these simple steps:
 
 ## Live Site
 
-You can view the live demo of WeatherCast deployed on GitHub Pages here:
+You can view the live demo of WeatherCast deployed on GitHub Pages.
 
-[**Live Demo Link**](https://your-username.github.io/your-repo-name/)
-*(Replace `https://your-username.github.io/your-repo-name/` with your actual GitHub Pages URL)*
 
 ## Public API Used
 
-* **Open-Meteo API**: Used for fetching current, hourly, and daily weather forecast data, including temperature, conditions, humidity, wind speed, and atmospheric pressure.
-    * API Documentation: [https://www.open-meteo.com/](https://www.open-meteo.com/)
-    * Geocoding API (for city coordinates): [https://open-meteo.com/en/docs/geocoding-api](https://open-meteo.com/en/docs/geocoding-api)
+Open-Meteo API
 
 * **`json-server`**: Used as a local mock API to manage and persist the user's list of favorite cities.
 
 ## Copyright and License Information
 
-© 2025 [Your Name or Company Name]. All rights reserved.
+© 2025 [Mark Davies]]. All rights reserved.
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
