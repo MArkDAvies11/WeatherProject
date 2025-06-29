@@ -1,13 +1,6 @@
 {
   "favoriteCities": [
     {
-      "id": "1",
-      "name": "Mombasa",
-      "latitude": -4.0375,
-      "longitude": 39.6644,
-      "addedDate": "2025-06-26T12:00:00Z"
-    },
-    {
       "id": "2",
       "name": "London",
       "latitude": 51.5074,
@@ -50,11 +43,18 @@
       "addedDate": "2025-06-27T07:59:00.347Z"
     },
     {
-      "id": "60e9",
+      "id": "41dc",
       "name": "Dodoma",
       "latitude": -6.125,
       "longitude": 35.75,
-      "addedDate": "2025-06-27T08:56:57.386Z"
+      "addedDate": "2025-06-28T19:53:45.038Z"
+    },
+    {
+      "id": "277d",
+      "name": "Mogadishu",
+      "latitude": 2.125,
+      "longitude": 45.375,
+      "addedDate": "2025-06-28T20:10:19.191Z"
     }
   ]
 }

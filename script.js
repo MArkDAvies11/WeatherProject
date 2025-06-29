@@ -1,9 +1,9 @@
-// Base URLs for APIs
+
 const OPEN_METEO_API_BASE_URL = 'https://api.open-meteo.com/v1/forecast';
 const GEOLOCATION_API_URL = 'https://geocoding-api.open-meteo.com/v1/search'; // Open-Meteo's geocoding API
 const JSON_SERVER_API_URL = 'http://localhost:3000/favoriteCities';
 
-// DOM Elements
+
 const cityInput = document.getElementById('city-input');
 const searchForm = document.getElementById('city-search-form');
 const currentCityNameSpan = document.getElementById('current-city-name');
@@ -18,11 +18,10 @@ const dailyForecastContainer = document.getElementById('daily-forecast-container
 const favoriteCitiesList = document.getElementById('favorite-cities-list');
 const themeToggle = document.getElementById('theme-toggle');
 
-let currentCityData = null; // To store data of the currently displayed city for adding to favorites
+let currentCityData = null;
 
-// Helper function to map weather codes to icons/descriptions (simplified example)
+
 function getWeatherIcon(weatherCode) {
-    // See Open-Meteo Weather Codes: https://www.open-meteo.com/en/docs
     const weatherIcons = {
         0: '<i class="fas fa-sun"></i> Clear sky',
         1: '<i class="fas fa-cloud-sun"></i> Mainly clear',
@@ -171,7 +170,7 @@ function renderSevenDayForecast(weatherData) {
   });
 }
 
-// --- JSON Server Interactions (Favorite Cities) ---
+
 
 // Function to fetch favorite cities from json-server
 async function fetchFavoriteCities() {
@@ -250,7 +249,7 @@ async function removeFavoriteCity(cityId) {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    await fetchFavoriteCities(); // Re-fetch and render updated list
+    await fetchFavoriteCities(); 
     alert("City removed from favorites!");
   } catch (error) {
     console.error("Error removing favorite city:", error);
@@ -306,13 +305,13 @@ favoriteCitiesList.addEventListener('click', async function(event) {
   }
 });
 
-// 4. Event Listener: Click event for Theme Toggle (Distinct functionality, good to add)
+// 4. Event Listener: Click event on the theme toggle button
 themeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 });
 
 
-// Initial App Load
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Try to get user's current location by default
   if (navigator.geolocation) {
@@ -322,9 +321,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         longitude
       } = position.coords;
       // You'd typically reverse geocode to get city name here,
-      // but for simplicity, we'll just display coords or a generic "Your Location"
       const weatherData = await fetchWeatherData(latitude, longitude);
-      renderCurrentWeather(weatherData, "Your Current Location"); // Or fetch city name from a reverse geocoding API
+      renderCurrentWeather(weatherData, "Your Current Location"); 
       renderSevenDayForecast(weatherData);
     }, async (error) => {
       console.warn("Geolocation denied or unavailable:", error);
